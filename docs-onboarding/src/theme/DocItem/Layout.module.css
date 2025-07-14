@@ -1,0 +1,93 @@
+.docPageWithAside {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  background: none;
+}
+
+.docMainContent {
+  flex: 1 1 0%;
+  min-width: 0;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.rightPanel {
+  width: 300px;
+  min-width: 220px;
+  max-width: 340px;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.rightPanelInner {
+  position: sticky;
+  top: 5.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* 600px 이하에서만 아래로 이동 */
+@media (max-width: 600px) {
+  .docPageWithAside {
+    flex-direction: column;
+  }
+  .rightPanel {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+    margin-left: 0;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  .rightPanelInner {
+    position: static;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rightPanel {
+    width: 180px;
+    min-width: 120px;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .docPageWithAside {
+    flex-direction: column;
+  }
+  .rightPanel {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+    margin-left: 0;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  .rightPanelInner {
+    position: static;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.feedbackBelowToc {
+  margin-top: 2.2rem;
+}
+
+@media (max-width: 900px) {
+  .feedbackBelowToc {
+    margin-top: 1.2rem;
+  }
+} 
