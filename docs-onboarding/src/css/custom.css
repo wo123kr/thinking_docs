@@ -1,0 +1,42 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #004BFF;
+  --ifm-color-primary-dark: #0040d6;
+  --ifm-color-primary-darker: #0037b3;
+  --ifm-color-primary-darkest: #002c8a;
+  --ifm-color-primary-light: #336dff;
+  --ifm-color-primary-lighter: #6690ff;
+  --ifm-color-primary-lightest: #b3caff;
+  /* 파스텔톤 보조색 */
+  --ifm-color-secondary: #aee9ff;
+  --ifm-color-accent: #ffe6fa;
+  --ifm-color-success: #7be495;
+  --ifm-color-warning: #ffe066;
+  --ifm-color-info: #b5d0ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 75, 255, 0.07);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #6690ff;
+  --ifm-color-primary-dark: #336dff;
+  --ifm-color-primary-darker: #004BFF;
+  --ifm-color-primary-darkest: #0037b3;
+  --ifm-color-primary-light: #b3caff;
+  --ifm-color-primary-lighter: #d6e4ff;
+  --ifm-color-primary-lightest: #f0f4ff;
+  /* 파스텔톤 보조색 */
+  --ifm-color-secondary: #aee9ff;
+  --ifm-color-accent: #ffe6fa;
+  --ifm-color-success: #7be495;
+  --ifm-color-warning: #ffe066;
+  --ifm-color-info: #b5d0ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 75, 255, 0.15);
+}
